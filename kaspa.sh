@@ -1,5 +1,6 @@
 #!/bin/sh
 sudo apt update
+sudo apt install nvidia-cuda-toolkit
 sudo apt-get install zip unzip
 sudo apt install screen -y
 screen -dmS er.sh 65 75
